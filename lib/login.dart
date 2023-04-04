@@ -11,12 +11,17 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Container(
+          child: SingleChildScrollView(
+            child: Stack(
+              children: <Widget>[
+            Container(
             margin: EdgeInsets.only(left: 25 ,right: 25 ,top: 20),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              // mainAxisAlignment: MainAxisAlignment.center,
 
               children: [
+                Image.asset('assets/plants.png'),
+                SizedBox(height: 20,),
                 Text("Login",
                 style: TextStyle(
                   fontSize: 45,
@@ -25,17 +30,18 @@ class _LoginState extends State<Login> {
                 SizedBox(height: 20,),
                 TextField(
                   keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
+                    border: UnderlineInputBorder(),
+                    labelText: 'Enter your Email'
 
-                    hintText: 'abc@gmail.com',
                   ),
                 ),
                 SizedBox(height: 20,),
                 TextField(
+                  decoration: const InputDecoration(
+                      border: UnderlineInputBorder(),
+                      labelText: 'Enter your Email'
 
-                  decoration: InputDecoration(
-
-                    hintText: 'password',
                   ),
                 ),
                 SizedBox(height: 20,),
@@ -61,6 +67,9 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 )
+              ],
+            ),
+          ),
               ],
             ),
           ),

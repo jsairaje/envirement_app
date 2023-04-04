@@ -23,7 +23,7 @@ class _JoinState extends State<Join> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.brown.shade600,
+                    primary: Colors.white70.withOpacity(0.05),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
                     ),
@@ -44,7 +44,7 @@ class _JoinState extends State<Join> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.brown.shade600,
+                    primary: Colors.white70.withOpacity(0.05),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
                     ),
