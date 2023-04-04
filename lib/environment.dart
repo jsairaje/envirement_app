@@ -7,6 +7,20 @@ class Environment extends StatefulWidget {
 }
 
 class _EnvironmentState extends State<Environment> {
+
+  void dice(){
+
+    Expanded(
+      child:Card(
+        child: SizedBox(
+          width: 300,
+          height: 100,
+          child: Center(child: Text('Elevated Card 1')),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +28,35 @@ class _EnvironmentState extends State<Environment> {
         title: Text("ECS"),
       ),
       body: SafeArea(
-        child: Container(),
+        child: Container(
+          margin: const EdgeInsets.all(20),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                      child:Card(
+                        child: SizedBox(
+                        width: 300,
+                        height: 100,
+                        child: Center(child: Text('Elevated Card 1')),
+                      ),
+                    ),
+                      ),
+                  Expanded(
+                    child:Card(
+                      child: SizedBox(
+                        width: 300,
+                        height: 100,
+                        child: Center(child: Text('Elevated Card 2')),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

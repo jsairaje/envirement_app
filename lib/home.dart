@@ -60,6 +60,7 @@ class _MyhomeState extends State<Myhome> {
                     ),
                   ],
                 ),
+<<<<<<< HEAD
                 const SizedBox(
                   height: 20,
                 ),
@@ -76,6 +77,24 @@ class _MyhomeState extends State<Myhome> {
                       Navigator.pushNamed(context, 'signup');
                     },
                     child: const Text(
+=======
+                  const SizedBox(height: 20,),
+                  SizedBox(
+                    height: 45,
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.white70.withOpacity(0.05),
+                          // rgb(245,242,240)
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+
+                      ),
+                      onPressed: (){
+                        Navigator.pushNamed(context, 'signup');
+                      }, child: const Text(
+>>>>>>> aae26ce58165ff73cb3971db33a310059334ca44
                       "Sign in",
                       style: TextStyle(
                         color: Colors.white,
@@ -91,7 +110,7 @@ class _MyhomeState extends State<Myhome> {
                   height: 45,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.brown.shade600,
+                      primary: Colors.white70.withOpacity(0.05),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                     ),
