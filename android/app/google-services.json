@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "193426112234",
+    "project_id": "envirementapp",
+    "storage_bucket": "envirementapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193426112234:android:9108a765571b9b0754a193",
+        "android_client_info": {
+          "package_name": "com.example.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193426112234-79pp4t5atr7itv667i66jnf28sr5eokh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCebfWI4eyCd66PCKm_qgDCsWhAm1hESxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193426112234-79pp4t5atr7itv667i66jnf28sr5eokh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
