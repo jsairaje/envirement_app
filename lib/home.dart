@@ -21,7 +21,8 @@ class _MyhomeState extends State<Myhome> {
             ),
           ),
           child: Container(
-            margin: const EdgeInsets.only(left: 25, right: 25, top: 20),
+            margin:
+                const EdgeInsets.only(left: 25, right: 25, top: 20, bottom: 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -30,22 +31,20 @@ class _MyhomeState extends State<Myhome> {
                     Text(
                       "Welcome ",
                       style: TextStyle(
-                        fontSize: 60,
-                        color: Colors.white,
-                      ),
+                          fontSize: 60,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
                 Row(
-                  children: [
-                    SizedBox(
-                      child: Text(
-                        "to environmental and civil",overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 25,
+                  children: const [
+                    Text(
+                      "to environmental and civil",
+                      style: TextStyle(
+                          fontSize: 18,
                           color: Colors.white,
-                        ),
-                      ),
+                          fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -60,7 +59,6 @@ class _MyhomeState extends State<Myhome> {
                     ),
                   ],
                 ),
-<<<<<<< HEAD
                 const SizedBox(
                   height: 20,
                 ),
@@ -69,7 +67,8 @@ class _MyhomeState extends State<Myhome> {
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.brown.shade600,
+                      primary: Colors.white70.withOpacity(0.05),
+                      // rgb(245,242,240)
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                     ),
@@ -77,24 +76,6 @@ class _MyhomeState extends State<Myhome> {
                       Navigator.pushNamed(context, 'signup');
                     },
                     child: const Text(
-=======
-                  const SizedBox(height: 20,),
-                  SizedBox(
-                    height: 45,
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white70.withOpacity(0.05),
-                          // rgb(245,242,240)
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)
-                        ),
-
-                      ),
-                      onPressed: (){
-                        Navigator.pushNamed(context, 'signup');
-                      }, child: const Text(
->>>>>>> aae26ce58165ff73cb3971db33a310059334ca44
                       "Sign in",
                       style: TextStyle(
                         color: Colors.white,
