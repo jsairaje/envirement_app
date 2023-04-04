@@ -65,7 +65,8 @@ class _MyhomeState extends State<Myhome> {
                     width: double.infinity,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.brown.shade600,
+                        primary: Colors.white70.withOpacity(0.05),
+                          // rgb(245,242,240)
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)
                         ),
@@ -86,7 +87,7 @@ class _MyhomeState extends State<Myhome> {
                   height: 45,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.brown.shade600,
+                      primary: Colors.white70.withOpacity(0.05),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)
                       ),
