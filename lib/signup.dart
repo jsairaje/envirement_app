@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 class Signup extends StatefulWidget {
   const Signup({Key? key}) : super(key: key);
 
@@ -12,41 +14,49 @@ class _SignupState extends State<Signup> {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          margin: EdgeInsets.only(left: 25 ,right: 25 ,top: 20),
+          margin: EdgeInsets.only(left: 25, right: 25, top: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-
             children: [
-              Text("Sign in",
+              Text(
+                "Sign in",
                 style: TextStyle(
                   fontSize: 45,
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               TextField(
+                textAlign: TextAlign.center,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-
                   hintText: 'Name',
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               TextField(
+                textAlign: TextAlign.center,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-
                   hintText: 'abc@gmail.com',
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               TextField(
-
+                textAlign: TextAlign.center,
+                obscureText: true,
                 decoration: InputDecoration(
-
                   hintText: 'password',
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               SizedBox(
                 width: double.infinity,
                 height: 45,
@@ -54,11 +64,9 @@ class _SignupState extends State<Signup> {
                   style: ElevatedButton.styleFrom(
                     primary: Colors.brown.shade600,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)
-                    ),
-
+                        borderRadius: BorderRadius.circular(10)),
                   ),
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.pushNamed(context, 'envconst');
                   },
                   child: Text(

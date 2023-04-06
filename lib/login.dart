@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -8,6 +9,9 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  final _auth = FirebaseAuth.instance;
+  String email="";
+  String password = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,18 +39,29 @@ class _LoginState extends State<Login> {
                       height: 20,
                     ),
                     TextField(
+                      textAlign: TextAlign.center,
                       keyboardType: TextInputType.emailAddress,
                       decoration: const InputDecoration(
                           border: UnderlineInputBorder(),
                           labelText: 'Enter your Email'),
+                      onChanged: (value){
+                        email = value;
+                        // print(email);
+                      },
                     ),
                     SizedBox(
                       height: 20,
                     ),
                     TextField(
+                      obscureText: true,
+                      textAlign: TextAlign.center,
                       decoration: const InputDecoration(
                           border: UnderlineInputBorder(),
                           labelText: 'Password'),
+                      onChanged: (value){
+                        password = value;
+                        // print(password);
+                      },
                     ),
                     SizedBox(
                       height: 20,
@@ -60,8 +75,16 @@ class _LoginState extends State<Login> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                         ),
-                        onPressed: () {
-                          Navigator.pushNamed(context, 'envconst');
+                        onPressed: () async{
+                          print(password + " "+ email);
+                          try{
+                            final newUser = await _auth.createUserWithEmailAndPassword(email: email, password: password);
+                            if(newUser !=Null){
+                              Navigator.pushNamed(context, 'envconst');
+                            }
+                          }catch(e){
+                            print(e);
+                          }
                         },
                         child: Text(
                           "Login",
