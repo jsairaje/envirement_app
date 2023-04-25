@@ -21,7 +21,7 @@ class _MyhomeState extends State<Myhome> {
             ),
           ),
           child: Container(
-            margin: const EdgeInsets.only(left: 25 ,right: 25 ,top: 20),
+            margin: const EdgeInsets.only(left: 25 ,right: 25 ,top: 20,bottom: 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
 
@@ -33,6 +33,7 @@ class _MyhomeState extends State<Myhome> {
                       style: TextStyle(
                         fontSize: 60,
                         color: Colors.white,
+                        fontWeight: FontWeight.bold
                       ),
                     ),
                   ],
@@ -42,8 +43,9 @@ class _MyhomeState extends State<Myhome> {
                     Text(
                       "to environmental and civil",
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 18,
                         color: Colors.white,
+                        fontWeight: FontWeight.bold
                       ),
                     ),
                   ],
@@ -60,27 +62,27 @@ class _MyhomeState extends State<Myhome> {
                   ],
                 ),
                   const SizedBox(height: 20,),
-                  SizedBox(
-                    height: 45,
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white70.withOpacity(0.05),
-                          // rgb(245,242,240)
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)
-                        ),
-
-                      ),
-                      onPressed: (){
-                        Navigator.pushNamed(context, 'signup');
-                      }, child: const Text(
-                      "Sign in",
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                    ),),
-                  ),
+                  // SizedBox(
+                  //   height: 45,
+                  //   width: double.infinity,
+                  //   child: ElevatedButton(
+                  //     style: ElevatedButton.styleFrom(
+                  //       primary: Colors.white70.withOpacity(0.05),
+                  //         // rgb(245,242,240)
+                  //       shape: RoundedRectangleBorder(
+                  //           borderRadius: BorderRadius.circular(10)
+                  //       ),
+                  //
+                  //     ),
+                  //     onPressed: (){
+                  //       Navigator.pushNamed(context, 'signup');
+                  //     }, child: const Text(
+                  //     "Sign in",
+                  //     style: TextStyle(
+                  //       color: Colors.white,
+                  //     ),
+                  //   ),),
+                  // ),
                  const SizedBox(height: 20,),
                 SizedBox(
                   width: double.infinity,
