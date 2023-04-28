@@ -6,6 +6,7 @@ import 'package:portfolio/login.dart';
 // import 'package:portfolio/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/thirdsection.dart';
+import 'package:portfolio/Admin/admin.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -18,6 +19,7 @@ void main() {
       'env':(context)=>Environment(),
       'restore':(context)=>Restore(),
       'structure':(context)=>Structure(),
+      'Addpeople':(context)=>Addpeople(),
     },
   ));
 }

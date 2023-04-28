@@ -37,55 +37,171 @@ class _EnvironmentState extends State<Environment> {
           margin: const EdgeInsets.all(20),
           child: Column(
             children: [
-
-              Expanded(
-                  child:ListView(
-                    children: [
-                      InkWell(
-                        onTap: (){},
-                        child: Container(
-                          height: 150,
-                          padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child:Row(
+                      children: [
+                        InkWell(
+                          onTap: (){},
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: Color(0xffcbe5e8),
-                              borderRadius: const BorderRadius.only(
-                                topRight: Radius.circular(80),
-                                bottomLeft: Radius.circular(80),
-                              ),
-                              boxShadow: [
-                                new BoxShadow(
-                                    color: Color(0xFf363f93).withOpacity(0.3),
-                                    offset: new Offset(-10, 0),
-                                    blurRadius: 20.0 ,
-                                    spreadRadius: 4.0
+                            height: 150,
+                            padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Color(0xffcbe5e8),
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(80),
+                                  bottomLeft: Radius.circular(80),
                                 ),
-
-                              ],
-                            ),
-                            padding: const EdgeInsets.only(
-                              left: 32,
-                              right: 50,
-                              bottom: 50,
-                              top: 24,
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-
-                              children: [
-                                Text(
-                                  'NAAC Institutional',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 20,
+                                boxShadow: [
+                                  new BoxShadow(
+                                      color: Color(0xFf363f93).withOpacity(0.3),
+                                      offset: new Offset(-10, 0),
+                                      blurRadius: 20.0 ,
+                                      spreadRadius: 4.0
                                   ),
-                                )   ,
 
-                              ],
+                                ],
+                              ),
+                              padding: const EdgeInsets.only(
+                                left: 32,
+                                right: 50,
+                                bottom: 50,
+                                top: 24,
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                children: [
+                                  Text(
+                                    'NAAC Institutional',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 20,
+                                    ),
+                                  )   ,
+                                  Text(
+                                    'Green',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         ),
-                      ),
+                        InkWell(
+                          onTap: (){},
+                          child: Container(
+                            height: 150,
+                            padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Color(0xffcbe5e8),
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(80),
+                                  bottomLeft: Radius.circular(80),
+                                ),
+                                boxShadow: [
+                                  new BoxShadow(
+                                      color: Color(0xFf363f93).withOpacity(0.3),
+                                      offset: new Offset(-10, 0),
+                                      blurRadius: 20.0 ,
+                                      spreadRadius: 4.0
+                                  ),
+
+                                ],
+                              ),
+                              padding: const EdgeInsets.only(
+                                left: 32,
+                                right: 50,
+                                bottom: 50,
+                                top: 24,
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                children: [
+                                  Text(
+                                    'NAAC Institutional',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 20,
+                                    ),
+                                  )   ,
+                                  Text(
+                                    'Energy',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 20,
+                                    ),
+                                  )   ,
+
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: (){},
+                          child: Container(
+                            height: 150,
+                            padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Color(0xFfEDF1D6),
+                                borderRadius: const BorderRadius.only(
+                                  bottomLeft: Radius.circular(80),
+                                  topRight: Radius.circular(80),
+                                ),
+                                boxShadow: [
+                                  new BoxShadow(
+                                      color: Color(0xFf363f93).withOpacity(0.3),
+                                      offset: new Offset(-10, 0),
+                                      blurRadius: 20.0 ,
+                                      spreadRadius: 4.0
+                                  ),
+
+                                ],
+                              ),
+                              padding: const EdgeInsets.only(
+                                left: 32,
+                                right: 50,
+                                bottom: 50,
+                                top: 24,
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Life Cycle Assesment',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 20,
+                                    ),
+                                  )   ,
+                                  Text(
+                                    'Environment',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 20,
+                                    ),
+                                  )   ,
+
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+              Expanded(
+                  child:ListView(
+                    children: [
                       InkWell(
                         onTap: (){},
                         child: Container(

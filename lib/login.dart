@@ -57,7 +57,7 @@ class _LoginState extends State<Login> {
 
                     ),
                     onPressed: (){
-                      Navigator.pushNamed(context, 'envconst');
+                      Navigator.pushNamed(context, 'Addpeople');
                     },
                     child: Text(
                       "Login",

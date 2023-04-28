@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+class Addpeople extends StatefulWidget {
+  const Addpeople({Key? key}) : super(key: key);
 
   @override
-  State<Login> createState() => _LoginState();
+  State<Addpeople> createState() => _AddpeopleState();
 }
 
-class _LoginState extends State<Login> {
+class _AddpeopleState extends State<Addpeople> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Stack(
@@ -22,7 +22,7 @@ class _LoginState extends State<Login> {
                   children: [
                     Image.asset('assets/plants.png'),
                     SizedBox(height: 20,),
-                    Text("Login",
+                    Text("Add People",
                       style: TextStyle(
                         fontSize: 45,
                       ),
@@ -50,7 +50,7 @@ class _LoginState extends State<Login> {
                       height: 45,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.brown.shade600,
+                          primary:Colors.white70.withOpacity(0.05),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)
                           ),
@@ -60,7 +60,7 @@ class _LoginState extends State<Login> {
                           Navigator.pushNamed(context, 'envconst');
                         },
                         child: Text(
-                          "Login",
+                          "Add People",
                           style: TextStyle(
                             color: Colors.white,
                           ),
@@ -78,6 +78,7 @@ class _LoginState extends State<Login> {
     );
   }
 }
+
 
 
 
