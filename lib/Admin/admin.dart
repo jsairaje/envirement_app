@@ -1,77 +1,66 @@
 import 'package:flutter/material.dart';
-
-class Signup extends StatefulWidget {
-  const Signup({Key? key}) : super(key: key);
+class Addpeople extends StatefulWidget {
+  const Addpeople({Key? key}) : super(key: key);
 
   @override
-  State<Signup> createState() => _SignupState();
+  State<Addpeople> createState() => _AddpeopleState();
 }
 
-class _SignupState extends State<Signup> {
+class _AddpeopleState extends State<Addpeople> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Stack(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(left: 25, right: 25, top: 20),
-                // alignment: Alignment.center,
+                margin: EdgeInsets.only(left: 25 ,right: 25 ,top: 20),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  // mainAxisAlignment: MainAxisAlignment.center,
+
                   children: [
                     Image.asset('assets/plants.png'),
                     SizedBox(height: 20,),
-                    Text(
-                      "Sign in",
+                    Text("Add People",
                       style: TextStyle(
                         fontSize: 45,
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    TextField(
-                      keyboardType: TextInputType.text,
-                      decoration: InputDecoration(
-                        hintText: 'Name',
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
+                    SizedBox(height: 20,),
                     TextField(
                       keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                        hintText: 'abc@gmail.com',
+                      decoration: const InputDecoration(
+                          border: UnderlineInputBorder(),
+                          labelText: 'Enter your Email'
+
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
+                    SizedBox(height: 20,),
                     TextField(
-                      decoration: InputDecoration(
-                        hintText: 'password',
+                      decoration: const InputDecoration(
+                          border: UnderlineInputBorder(),
+                          labelText: 'Enter your Email'
+
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
+                    SizedBox(height: 20,),
                     SizedBox(
                       width: double.infinity,
                       height: 45,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.white70.withOpacity(0.05),
+                          primary:Colors.white70.withOpacity(0.05),
                           shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
+                              borderRadius: BorderRadius.circular(10)
+                          ),
+
                         ),
-                        onPressed: () {
+                        onPressed: (){
                           Navigator.pushNamed(context, 'envconst');
                         },
                         child: Text(
-                          "Sign in",
+                          "Add People",
                           style: TextStyle(
                             color: Colors.white,
                           ),
@@ -85,6 +74,11 @@ class _SignupState extends State<Signup> {
           ),
         ),
       ),
+
     );
   }
 }
+
+
+
+

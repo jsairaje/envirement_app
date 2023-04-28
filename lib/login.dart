@@ -50,14 +50,14 @@ class _LoginState extends State<Login> {
                   height: 45,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.brown.shade600,
+                      primary:Colors.white70.withOpacity(0.05),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)
                       ),
 
                     ),
                     onPressed: (){
-                      Navigator.pushNamed(context, 'envconst');
+                      Navigator.pushNamed(context, 'Addpeople');
                     },
                     child: Text(
                       "Login",

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-class Restore extends StatefulWidget {
-  const Restore({Key? key}) : super(key: key);
+class Structure extends StatefulWidget {
+  const Structure({Key? key}) : super(key: key);
 
   @override
-  State<Restore> createState() => _RestoreState();
+  State<Structure> createState() => _StructureState();
 }
 
-class _RestoreState extends State<Restore> {
+class _StructureState extends State<Structure> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,9 +19,20 @@ class _RestoreState extends State<Restore> {
         ),
         elevation: 0,
         backgroundColor: Colors.transparent,
+        // leading: IconButton(
+        //   onPressed: () {},
+        //   icon: Icon(Icons.arrow_back),
+        // ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.more_vert),
+          ),
+        ],
       ),
       body: SafeArea(
-        child: Container(
+        child:Container(
+          margin: const EdgeInsets.all(20),
           child: Column(
             children: [
               Expanded(
@@ -60,53 +71,9 @@ class _RestoreState extends State<Restore> {
 
                             children: [
                               Text(
-                                'New Construction',
+                                'Structural Audit',
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 20,
-                                ),
-                              )   ,
-
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      onTap: (){},
-                      child: Container(
-                        height: 150,
-                        padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Color(0xFf9DC08B),
-                            borderRadius: const BorderRadius.only(
-                              bottomRight: Radius.circular(80),
-                              topLeft: Radius.circular(80),
-                            ),
-                            boxShadow: [
-                              new BoxShadow(
-                                  color: Color(0xFf363f93).withOpacity(0.3),
-                                  offset: new Offset(-10, 0),
-                                  blurRadius: 20.0 ,
-                                  spreadRadius: 4.0
-                              ),
-
-                            ],
-                          ),
-                          padding: const EdgeInsets.only(
-                            left: 32,
-                            right: 50,
-                            bottom: 50,
-                            top: 24,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Repair',
-                                style: TextStyle(
-                                  color: Colors.white,
                                   fontSize: 20,
                                 ),
                               )   ,
@@ -148,7 +115,7 @@ class _RestoreState extends State<Restore> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Maintainance',
+                                'Structural Health Monitoring',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20,
@@ -167,51 +134,7 @@ class _RestoreState extends State<Restore> {
                         padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Color(0xFfE7AB9A),
-                            borderRadius: const BorderRadius.only(
-                              topLeft: Radius.circular(80),
-                              bottomRight: Radius.circular(80),
-                            ),
-                            boxShadow: [
-                              new BoxShadow(
-                                  color: Color(0xFf363f93).withOpacity(0.3),
-                                  offset: new Offset(-10, 0),
-                                  blurRadius: 20.0 ,
-                                  spreadRadius: 4.0
-                              ),
-
-                            ],
-                          ),
-                          padding: const EdgeInsets.only(
-                            left: 32,
-                            right: 50,
-                            bottom: 50,
-                            top: 24,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Water Proofing',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                ),
-                              )   ,
-
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      onTap: (){},
-                      child: Container(
-                        height: 150,
-                        padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Color(0xFf38A3A5),
+                            color: Color(0xFFE2C2B9),
                             borderRadius: const BorderRadius.only(
                               topRight: Radius.circular(80),
                               bottomLeft: Radius.circular(80),
@@ -236,53 +159,9 @@ class _RestoreState extends State<Restore> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Furniture',
+                                'RCC',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                ),
-                              )   ,
-
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      onTap: (){},
-                      child: Container(
-                        height: 150,
-                        padding: EdgeInsets.only(left: 20 ,right: 20 ,bottom: 20),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Color(0xFFE2C2B9),
-                            borderRadius: const BorderRadius.only(
-                              topLeft:  Radius.circular(80),
-                              bottomRight: Radius.circular(80),
-                            ),
-                            boxShadow: [
-                              new BoxShadow(
-                                  color: Color(0xFf363f93).withOpacity(0.3),
-                                  offset: new Offset(-10, 0),
-                                  blurRadius: 20.0 ,
-                                  spreadRadius: 4.0
-                              ),
-
-                            ],
-                          ),
-                          padding: const EdgeInsets.only(
-                            left: 32,
-                            right: 50,
-                            bottom: 50,
-                            top: 24,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Electrification',
-                                style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontSize: 20,
                                 ),
                               )   ,
@@ -324,9 +203,9 @@ class _RestoreState extends State<Restore> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Plumbing',
+                                'RCC Design',
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontSize: 20,
                                 ),
                               )   ,
