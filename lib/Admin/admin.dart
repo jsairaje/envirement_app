@@ -57,14 +57,36 @@ class _AddpeopleState extends State<Addpeople> {
 
                         ),
                         onPressed: (){
+                          final snackBar = SnackBar(
+                            backgroundColor: Colors.teal,
+                            behavior: SnackBarBehavior.floating,
+                            margin: EdgeInsets.all(50),
+                            elevation: 30,
+                            duration: Duration(milliseconds: 1000),
+                            padding: EdgeInsets.all(20),
+                              shape: StadiumBorder(),
+                            content: const Text('User Added Sucessfully!'),
+                            // action: SnackBarAction(
+                            //   label: 'Undo',
+                            //   onPressed: () {
+                            //     // Some code to undo the change.
+                            //   },
+                            // ),
+                          );
+                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
                           Navigator.pushNamed(context, 'envconst');
                         },
-                        child: Text(
-                          "Add People",
+                        child: const Text("Add People",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                         ),
+                        // child: Text(
+                        //   "Add People",
+                        //   style: TextStyle(
+                        //     color: Colors.white,
+                        //   ),
+                        // ),
                       ),
                     )
                   ],
