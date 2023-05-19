@@ -62,27 +62,27 @@ class _MyhomeState extends State<Myhome> {
                 const SizedBox(
                   height: 20,
                 ),
-                SizedBox(
-                  height: 45,
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.white70.withOpacity(0.05),
-                      // rgb(245,242,240)
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'signup');
-                    },
-                    child: const Text(
-                      "Sign in",
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
+                // SizedBox(
+                //   height: 45,
+                //   width: double.infinity,
+                //   child: ElevatedButton(
+                //     style: ElevatedButton.styleFrom(
+                //       primary: Colors.white70.withOpacity(0.05),
+                //       // rgb(245,242,240)
+                //       shape: RoundedRectangleBorder(
+                //           borderRadius: BorderRadius.circular(10)),
+                //     ),
+                //     onPressed: () {
+                //       Navigator.pushNamed(context, 'signup');
+                //     },
+                //     child: const Text(
+                //       "Sign in",
+                //       style: TextStyle(
+                //         color: Colors.white,
+                //       ),
+                //     ),
+                //   ),
+                // ),
                 const SizedBox(
                   height: 20,
                 ),
